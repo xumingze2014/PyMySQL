@@ -4,9 +4,9 @@ from setuptools import setup, find_packages
 version_tuple = __import__('pymysql').VERSION
 
 if version_tuple[3] is not None:
-    version = "%d.%d.%d_%s" % version_tuple
+    version = "test-%d.%d.%d_%s" % version_tuple
 else:
-    version = "%d.%d.%d" % version_tuple[:3]
+    version = "test-%d.%d.%d" % version_tuple[:3]
 
 setup(
     name="PyMySQL",
